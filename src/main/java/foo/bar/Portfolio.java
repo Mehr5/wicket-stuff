@@ -7,11 +7,11 @@ import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.apache.wicket.request.resource.CssResourceReference;
 
 
-public class Index extends WebPage {
+public class Portfolio extends WebPage {
 
     private static final long serialVersionUID = 2L;
 
-    public Index (final PageParameters parameters) {
+    public Portfolio (final PageParameters parameters) {
 
     }
 
@@ -30,4 +30,3 @@ public class Index extends WebPage {
                 HomePage.class, "css/responsive.css")));
     }
 }
-

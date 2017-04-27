@@ -13,6 +13,13 @@ public class Index extends WebPage {
 
     public Index (final PageParameters parameters) {
 
+        /*add(new Link("landPageId") {
+            @Override
+            public void onClick(){
+                setResponsePage(SignIn.class);
+            }
+        });*/
+
     }
 
     @Override

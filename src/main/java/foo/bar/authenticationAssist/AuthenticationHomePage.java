@@ -1,24 +1,23 @@
-package foo.bar;
+package foo.bar.authenticationAssist;
 
+import foo.bar.HomePage;
+import org.apache.wicket.authroles.authorization.strategies.role.annotations.AuthorizeInstantiation;
 import org.apache.wicket.markup.head.CssHeaderItem;
 import org.apache.wicket.markup.head.IHeaderResponse;
 import org.apache.wicket.markup.html.WebPage;
+import org.apache.wicket.markup.html.basic.Label;
+import org.apache.wicket.model.Model;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.apache.wicket.request.resource.CssResourceReference;
 
+@AuthorizeInstantiation("USER")
+public class AuthenticationHomePage extends WebPage {
 
-public class Index extends WebPage {
+    private static final long serialVersionUID = 1L;
 
-    private static final long serialVersionUID = 2L;
+    public AuthenticationHomePage(final PageParameters parameters) {
 
-    public Index (final PageParameters parameters) {
 
-        /*add(new Link("landPageId") {
-            @Override
-            public void onClick(){
-                setResponsePage(SignIn.class);
-            }
-        });*/
 
     }
 
@@ -37,4 +36,3 @@ public class Index extends WebPage {
                 HomePage.class, "css/responsive.css")));
     }
 }
-

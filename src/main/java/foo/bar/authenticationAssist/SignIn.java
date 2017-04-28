@@ -1,25 +1,19 @@
-package foo.bar;
+package foo.bar.authenticationAssist;
 
+import foo.bar.HomePage;
+import org.apache.wicket.authroles.authentication.panel.SignInPanel;
 import org.apache.wicket.markup.head.CssHeaderItem;
 import org.apache.wicket.markup.head.IHeaderResponse;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.apache.wicket.request.resource.CssResourceReference;
 
+public final class SignIn extends WebPage
+{
 
-public class Index extends WebPage {
-
-    private static final long serialVersionUID = 2L;
-
-    public Index (final PageParameters parameters) {
-
-        /*add(new Link("landPageId") {
-            @Override
-            public void onClick(){
-                setResponsePage(SignIn.class);
-            }
-        });*/
-
+    public SignIn(final PageParameters parameters)
+    {
+        add(new SignInPanel("signInPanel"));
     }
 
     @Override

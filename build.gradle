@@ -12,6 +12,7 @@ repositories {
 dependencies {
     compile 'org.slf4j:slf4j-api:1.7.13'
     compile 'org.apache.wicket:wicket:7.1.0'
+    compile group: 'org.apache.wicket', name: 'wicket-auth-roles', version: '7.6.0'
     compile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
 
     

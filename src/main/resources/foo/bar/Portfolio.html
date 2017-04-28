@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:wicket="http://www.w3.org/1999/xhtml">
+<html xmlns:wicket="http://www.w3.org/1999/xhtml" xmlns:wicked="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <title>Kirill | Student</title>
@@ -7,7 +7,7 @@
 <body>
 <header>
     <wicket:link>
-        <a href="HomePage.html" id="logo">
+        <a wicked:id="HomePage" id="logo">
             <h1>Kirill</h1>
             <h2>Student</h2>
         </a>
@@ -15,7 +15,6 @@
     <nav>
         <nav>
             <ul>
-                <li><a href="Contacts.html">Portfolio</a></li>
                 <li><a wicket:id="About">About</a></li>
                 <li><a wicket:id="Contacts">Contacts</a></li>
                 <li><a wicket:id="SignOut">Sign Out</a></li>
@@ -25,6 +24,7 @@
 </header>
 <div id="wrapper">
     <section>
+        <h3>Portfolio</h3>
         <ul id="gallery">
             <li>
                 <p>Some App</p>
@@ -32,8 +32,6 @@
         </ul>
     </section>
     <footer>
-        <a href="http://twitter.com"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
-        <a href="http://facebook.com"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
         <p>&copy; 2017 Kirill</p>
     </footer>
 </div>

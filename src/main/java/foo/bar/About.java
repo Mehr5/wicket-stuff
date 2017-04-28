@@ -54,12 +54,12 @@ public class About extends WebPage {
         super.renderHead(response);
 
         response.render(CssHeaderItem.forReference(new CssResourceReference(
-                AuthenticationHomePage.class, "css/main.css")));
+                Portfolio.class, "css/main.css")));
 
         response.render(CssHeaderItem.forReference(new CssResourceReference(
-                AuthenticationHomePage.class, "css/normalize.css")));
+                Portfolio.class, "css/normalize.css")));
 
         response.render(CssHeaderItem.forReference(new CssResourceReference(
-                AuthenticationHomePage.class, "css/responsive.css")));
+                Portfolio.class, "css/responsive.css")));
     }
 }

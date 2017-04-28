@@ -1,5 +1,6 @@
 package foo.bar.authenticationAssist;
 
+import foo.bar.Portfolio;
 import org.apache.wicket.authroles.authentication.panel.SignInPanel;
 import org.apache.wicket.markup.head.CssHeaderItem;
 import org.apache.wicket.markup.head.IHeaderResponse;
@@ -21,13 +22,13 @@ public final class SignIn extends WebPage
         super.renderHead(response);
 
         response.render(CssHeaderItem.forReference(new CssResourceReference(
-                HomePage.class, "css/main.css")));
+                Portfolio.class, "css/main.css")));
 
         response.render(CssHeaderItem.forReference(new CssResourceReference(
-                HomePage.class, "css/normalize.css")));
+                Portfolio.class, "css/normalize.css")));
 
         response.render(CssHeaderItem.forReference(new CssResourceReference(
-                HomePage.class, "css/responsive.css")));
+                Portfolio.class, "css/responsive.css")));
     }
 }
 

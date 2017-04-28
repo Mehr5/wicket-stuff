@@ -6,21 +6,18 @@
 </head>
 <body>
 <header>
-    <wicket:link>
         <a href="HomePage.html" id="logo">
             <h1>Kirill</h1>
             <h2>Student</h2>
         </a>
-    </wicket:link>
-    <nav>
-        <wicket:link>
+        <nav>
             <ul>
-                <li><a href="HomePage.html" class="selected">HomePage</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Contacts.html">Contact</a></li>
+                <li><a wicket:id="Portfolio">Portfolio</a></li>
+                <li><a wicket:id="About">About</a></li>
+                <li><a wicket:id="Contacts">Contacts</a></li>
+                <li><a wicket:id="SignOut">Sign Out</a></li>
             </ul>
-        </wicket:link>
-    </nav>
+        </nav>
 </header>
 <div id="wrapper">
     <section id="primary">

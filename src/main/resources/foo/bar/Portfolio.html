@@ -8,27 +8,26 @@
 <header>
     <wicket:link>
         <a href="HomePage.html" id="logo">
-        <h1>Kirill</h1>
-        <h2>Student</h2>
-    </a>
+            <h1>Kirill</h1>
+            <h2>Student</h2>
+        </a>
     </wicket:link>
     <nav>
-        <wicket:link>
+        <nav>
             <ul>
-                <li><a href="HomePage.html" class="selected">HomePage</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Contacts.html">Contact</a></li>
+                <li><a href="Contacts.html">Portfolio</a></li>
+                <li><a wicket:id="About">About</a></li>
+                <li><a wicket:id="Contacts">Contacts</a></li>
+                <li><a wicket:id="SignOut">Sign Out</a></li>
             </ul>
-        </wicket:link>
+        </nav>
     </nav>
 </header>
 <div id="wrapper">
     <section>
         <ul id="gallery">
             <li>
-                <a href="img/numbers-01.jpg">
-                    <p>Some App</p>
-                </a>
+                <p>Some App</p>
             </li>
         </ul>
     </section>

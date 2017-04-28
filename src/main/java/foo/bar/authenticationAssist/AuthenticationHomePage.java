@@ -1,12 +1,13 @@
 package foo.bar.authenticationAssist;
 
-import foo.bar.HomePage;
+import foo.bar.About;
+import foo.bar.Contacts;
+import foo.bar.Portfolio;
 import org.apache.wicket.authroles.authorization.strategies.role.annotations.AuthorizeInstantiation;
 import org.apache.wicket.markup.head.CssHeaderItem;
 import org.apache.wicket.markup.head.IHeaderResponse;
 import org.apache.wicket.markup.html.WebPage;
-import org.apache.wicket.markup.html.basic.Label;
-import org.apache.wicket.model.Model;
+import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.apache.wicket.request.resource.CssResourceReference;
 
@@ -17,7 +18,30 @@ public class AuthenticationHomePage extends WebPage {
 
     public AuthenticationHomePage(final PageParameters parameters) {
 
-
+        add(new Link("Portfolio") {
+            @Override
+            public void onClick() {
+                setResponsePage(Portfolio.class);
+            }
+        });
+        add(new Link("About") {
+            @Override
+            public void onClick() {
+                setResponsePage(About.class);
+            }
+        });
+        add(new Link("Contacts") {
+            @Override
+            public void onClick() {
+                setResponsePage(Contacts.class);
+            }
+        });
+        add(new Link("SignOut") {
+            @Override
+            public void onClick() {
+                setResponsePage(AuthenticationSignOut.class);
+            }
+        });
 
     }
 

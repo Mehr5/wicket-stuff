@@ -1,6 +1,5 @@
 package foo.bar.authenticationAssist;
 
-import foo.bar.HomePage;
 import org.apache.wicket.authroles.authentication.panel.SignInPanel;
 import org.apache.wicket.markup.head.CssHeaderItem;
 import org.apache.wicket.markup.head.IHeaderResponse;

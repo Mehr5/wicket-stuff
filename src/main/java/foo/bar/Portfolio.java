@@ -16,10 +16,11 @@ public class Portfolio extends WebPage {
 
     public Portfolio (final PageParameters parameters) {
 
-        add(new Link("About") {
+
+        add(new Link("Portfolio") {
             @Override
             public void onClick() {
-                setResponsePage(About.class);
+                setResponsePage(Portfolio.class);
             }
         });
         add(new Link("Contacts") {

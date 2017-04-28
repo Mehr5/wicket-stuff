@@ -27,12 +27,7 @@ public class Contacts extends WebPage {
                 setResponsePage(Portfolio.class);
             }
         });
-        add(new Link("About") {
-            @Override
-            public void onClick() {
-                setResponsePage(About.class);
-            }
-        });
+
         add(new Link("Contacts") {
             @Override
             public void onClick() {
@@ -47,7 +42,7 @@ public class Contacts extends WebPage {
         });
 
     }
-    
+
 
     @Override
     public void renderHead(IHeaderResponse response) {

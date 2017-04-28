@@ -1,6 +1,5 @@
 package foo.bar.authenticationAssist;
 
-import foo.bar.About;
 import foo.bar.Contacts;
 import foo.bar.Portfolio;
 import org.apache.wicket.authroles.authorization.strategies.role.annotations.AuthorizeInstantiation;
@@ -22,12 +21,6 @@ public class AuthenticationHomePage extends WebPage {
             @Override
             public void onClick() {
                 setResponsePage(Portfolio.class);
-            }
-        });
-        add(new Link("About") {
-            @Override
-            public void onClick() {
-                setResponsePage(About.class);
             }
         });
         add(new Link("Contacts") {

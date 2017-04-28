@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html xmlns:wicket="http://www.w3.org/1999/xhtml">
+<html xmlns:wicket="http://www.w3.org/1999/xhtml" xmlns:wicked="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <title>Kirill | Student</title>
 </head>
 <body>
 <header>
-        <a href="HomePage.html" id="logo">
+    <wicket:link>
+        <a wicked:id="HomePage" id="logo">
             <h1>Kirill</h1>
             <h2>Student</h2>
         </a>
+    </wicket:link>
         <nav>
             <ul>
                 <li><a wicket:id="Portfolio">Portfolio</a></li>
-                <li><a wicket:id="About">About</a></li>
                 <li><a wicket:id="Contacts">Contacts</a></li>
                 <li><a wicket:id="SignOut">Sign Out</a></li>
             </ul>
